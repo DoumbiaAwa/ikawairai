@@ -1,6 +1,6 @@
 <div class="container">
-
   <div class="left">
+    <img  class="logo" src="../assets/logo.png">
     <ion-list>
       <ion-item>
         <ion-icon name="person-outline"></ion-icon>
@@ -11,7 +11,6 @@
       <ion-label>Catégorie</ion-label>
         </ion-item>
     </ion-list>
-   
   </div>
 
   
@@ -21,20 +20,67 @@
   </div>
   <!-- barre de recherche -->
   <!-- ET bouton d'ajout -->
-  <div class="barre">
-    <!-- <div>
+  
+    <div class="ti">
       <h1>Liste des éléveurs</h1>
-    </div> -->
+    </div>
     <div class="recherche">
     <input type="search" placeholder="Recherche..."/>
     <button>Rechercher</button>
   </div>
-<div class="ajout">
-  <button class="btn">Nouvel éléveur</button>
+
+  <!-- le bouton ajout -->
+  <div class="ajout">
+    <button class="btn">
+      Nouvel éléveur
+      <img class="ico" src="./assets/ajout.png"  style="float: right;">
+    </button>
+  </div>
+  
+  <!-- card éléveurs -->
+<div class="card">
+  <div class="title">
+    <p>Eléveurs</p>
+  </div>
+  <div class="icon">
+  <img src="./assets/user.png" >
+  </div>
+  <div class="nbre">
+   <p>Nombres d'éléveurs</p>
+   <h2>170</h2>
+  </div>
 
 </div>
+ <!-- parti liste -->
+ <div>
+  <table>
+    <thead>
+        <tr>
+             <th></th>
+            <th>Avatar</th>
+            <th>Nom Complet</th>
+            <th>Contact</th>
+            <th>Email</th>
+            <th>Adresse</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td ><input type="checkbox" class="check" ></td>
+            <td><img src="../assets/user.png"></td>
+            <td>Jane Smith</td>
+            <td>987-654-3210</td>
+            <td>jane.smith@example.com</td>
+            <td>456 Elm St, Town</td>
+            <td><button class="pr">voir profil</button></td>
+        </tr>
+      
+    </tbody>
+</table>
+
+ </div>
 </div>
 
-
 </div>
-</div> 
+
