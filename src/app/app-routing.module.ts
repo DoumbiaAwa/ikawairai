@@ -15,6 +15,18 @@ const routes: Routes = [
     path: 'accueil-awa',
     loadChildren: () => import('./accueil-awa/accueil-awa.module').then( m => m.AccueilAwaPageModule)
   },
+  {
+    path: 'employe-form',
+    loadChildren: () => import('./employe-form/employe-form.module').then( m => m.EmployeFormPageModule)
+  },
+  {
+    path: 'defauld-categorie',
+    loadChildren: () => import('./defauld-categorie/defauld-categorie.module').then( m => m.DefauldCategoriePageModule)
+  },
+  {
+    path: 'ajout-categorie',
+    loadChildren: () => import('./ajout-categorie/ajout-categorie.module').then( m => m.AjoutCategoriePageModule)
+  },
 
 ];
 
