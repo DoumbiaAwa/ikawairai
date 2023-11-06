@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AccueilAwaPageRoutingModule } from './accueil-awa-routing.module';
+import { ChoixPageRoutingModule } from './choix-routing.module';
 
-import { AccueilAwaPage } from './accueil-awa.page';
+import { ChoixPage } from './choix.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AccueilAwaPageRoutingModule
+    ChoixPageRoutingModule
   ],
-  declarations: [AccueilAwaPage]
+  declarations: [ChoixPage]
 })
-export class AccueilAwaPageModule {}
+export class ChoixPageModule {}

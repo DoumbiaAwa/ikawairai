@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
   {
     path: '',
@@ -12,21 +11,19 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'accueil-awa',
-    loadChildren: () => import('./accueil-awa/accueil-awa.module').then( m => m.AccueilAwaPageModule)
+    path: 'demarrage',
+    loadChildren: () => import('./demarrage/demarrage.module').then( m => m.DemarragePageModule)
   },
   {
-    path: 'employe-form',
-    loadChildren: () => import('./employe-form/employe-form.module').then( m => m.EmployeFormPageModule)
+    path: 'choix',
+    loadChildren: () => import('./choix/choix.module').then( m => m.ChoixPageModule)
   },
   {
-    path: 'defauld-categorie',
-    loadChildren: () => import('./defauld-categorie/defauld-categorie.module').then( m => m.DefauldCategoriePageModule)
+    path: 'login-employer',
+    loadChildren: () => import('./login-employer/login-employer.module').then( m => m.LoginEmployerPageModule)
   },
-  {
-    path: 'ajout-categorie',
-    loadChildren: () => import('./ajout-categorie/ajout-categorie.module').then( m => m.AjoutCategoriePageModule)
-  },
+  
+  
 
 ];
 

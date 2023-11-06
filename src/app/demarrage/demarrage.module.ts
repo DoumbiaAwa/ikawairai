@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AjoutCategoriePageRoutingModule } from './ajout-categorie-routing.module';
+import { DemarragePageRoutingModule } from './demarrage-routing.module';
 
-import { AjoutCategoriePage } from './ajout-categorie.page';
+import { DemarragePage } from './demarrage.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AjoutCategoriePageRoutingModule
+    DemarragePageRoutingModule
   ],
-  declarations: [AjoutCategoriePage]
+  declarations: [DemarragePage]
 })
-export class AjoutCategoriePageModule {}
+export class DemarragePageModule {}
