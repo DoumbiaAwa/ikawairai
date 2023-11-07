@@ -1,0 +1,63 @@
+.container{
+    width: 428px;
+    height: 926px;
+background-image: url(../demarrage/assets/accueil.png);
+}
+.bar{
+    width: 428px;
+    height: 70px;
+    flex-shrink: 0;
+    background-color: white;
+}
+
+.titre{
+    color: #22202A;
+    text-align: center;
+    font-family: Sunflower;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+justify-content: center;
+}
+.return{
+width: 30px;
+height: 30px;
+margin-top: 10px;
+}
+
+.ipt{
+    border-radius: 1px;
+    border: 1px solid #A7A1A1;
+    background: var(--white, #FFF);
+    width: 138px;
+height: 128px;
+flex-shrink: 0;
+
+}
+  
+form{
+ margin-left: 8px;
+margin-top: 20px;
+}
+select{
+    width: 361.25px;
+    height: 51.945px;
+    flex-shrink: 0;
+    border-radius: 8px;
+border: 1px solid #D1E2EA;
+background: rgba(0, 0, 0, 0.06);
+margin-right: 200%;
+}
+input{
+    width: 361.25px;
+height: 51.945px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #D1E2EA;
+background: rgba(0, 0, 0, 0.06);
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
