@@ -1,0 +1,56 @@
+.container{
+    width: 428px;
+    height: 926px;
+background-image: url(../demarrage/assets/accueil.png);
+}
+.bar{
+    width: 428px;
+    height: 70px;
+    flex-shrink: 0;
+    background-color: white;
+}
+
+.tx{
+text-align: center;
+justify-content: center;
+margin-top: -20px;
+color: rgba(254, 143, 74, 0.90);
+text-align: center;
+font-family: Sunflower;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 125% */
+}
+.card{
+    width: 40%; 
+    margin-bottom: 10px; 
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 5px;
+background: var(--white, #FFF);
+box-shadow: 0px 1px 8px 0px rgba(110, 110, 110, 0.10);
+    margin-right: 20px;
+}
+.contenu{
+    display: flex;
+    flex-wrap: wrap;
+        margin-top: 20px;
+    // margin-left: 10px;
+    // align-items:center;
+    margin-left: 40px;
+    // justify-content: space-between;
+    width: 90%;
+    // margin-top: 50px;
+}
+button{
+    width: 93.543px;
+    height: 25.22px;
+    transform: rotate(-0.35deg);
+    flex-shrink: 0;
+    border-radius: 8px;
+border: 1px solid var(--white, #FFF);
+background: var(--orange, #FE8F4A);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+color: #FFF;
+}

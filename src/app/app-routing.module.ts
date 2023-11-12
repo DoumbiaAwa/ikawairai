@@ -38,6 +38,30 @@ const routes: Routes = [
     path: 'perte',
     loadChildren: () => import('./perte/perte.module').then( m => m.PertePageModule)
   },
+  {
+    path: 'vente',
+    loadChildren: () => import('./vente/vente.module').then( m => m.VentePageModule)
+  },
+  {
+    path: 'aliment',
+    loadChildren: () => import('./aliment/aliment.module').then( m => m.AlimentPageModule)
+  },
+  {
+    path: 'inscription',
+    loadChildren: () => import('./inscription/inscription.module').then( m => m.InscriptionPageModule)
+  },
+  {
+    path: 'login-client',
+    loadChildren: () => import('./login-client/login-client.module').then( m => m.LoginClientPageModule)
+  },
+  {
+    path: 'accueil-client',
+    loadChildren: () => import('./accueil-client/accueil-client.module').then( m => m.AccueilClientPageModule)
+  },
+  {
+    path: 'contact',
+    loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
+  },
   
   
 

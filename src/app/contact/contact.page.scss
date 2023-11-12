@@ -1,0 +1,42 @@
+.haut{
+    width: 428px;
+    height: 300px;
+    flex-shrink: 0;
+    background: rgba(254, 143, 74, 0.66);
+}
+.container{
+background-image: url(../demarrage/assets/accueil.png);
+width: 410px;
+height: 700px;
+flex-shrink: 0;
+border-radius: 70px;
+margin-top: 60px;
+margin-right: 60%;
+}
+img{
+   
+    flex-shrink: 0;
+    border-radius: 188px;
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 35%;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+P{
+    color: #000;
+    font-family: Sunflower;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+   text-align: center;
+}
+.return{
+    width: 30px;
+    height: 30px;
+position: absolute;
+    top: 10px;
+    left: 10px;
+    
+}
