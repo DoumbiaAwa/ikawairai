@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { TachePageRoutingModule } from './tache-routing.module';
 
 import { TachePage } from './tache.page';
+import { TacheService } from '../service/tache.service';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TachePageRoutingModule
+    TachePageRoutingModule,
+    
   ],
   declarations: [TachePage]
 })

@@ -3,34 +3,37 @@
     <ion-icon name="arrow-back-outline" class="return"routerLink="/accueil-employer"></ion-icon>
     <p class="titre">Signaler une perte</p>
   </div>
-<form>
-  <input type="file" class="ipt" >
+<form [formGroup]="perteform">
+
+  <input type="file" class="ipt" formControlName="photo">
   <div class="form-group" >
     <label for="category">Catégorie</label>
-    <select name="">
-      <Option>Cat1</Option>
-      <Option>Cat1</Option>
-      <Option>Cat1</Option>
+    <select name="" formControlName="categorie">
+      <Option  *ngFor="let category of categories$ | async" [value]="category.id" >
+        {{category.nom}}</Option>
+      <!-- <Option>Cat1</Option>
+      <Option>Cat1</Option> -->
     </select>
   </div>
   <div class="form-group">
     <label for="race">Race</label>
     <select name="">
-      <Option>Race1</Option>
-      <Option>Race1</Option>
-      <Option>Race1</Option>
+      <Option *ngFor="let race of selectedCategory?.races" [value]="race.race">
+        {{race.race}} </Option> 
+      <!-- <Option>Race1</Option>
+      <Option>Race1</Option> -->
     </select>
   </div>
   <div class="form-group">
     <label>Nombres</label>
-    <input type="number" placeholder="Nombres">
+    <input type="number" placeholder="Nombres" formControlName="nombre">
   </div>
   <div class="form-group">
     <label> Causes</label>
-    <input type="textarea" placeholder="description......" class="des">
+    <input type="textarea" placeholder="description......" class="des" formControlName="cause">
   </div>
   <div>
-    <button>Enregistrer</button>
+    <button (click)="ajout()">Enregistrer</button>
   </div>
 </form>
 </div> 

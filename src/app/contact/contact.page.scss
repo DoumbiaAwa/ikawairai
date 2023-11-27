@@ -1,42 +1,88 @@
-.haut{
-    width: 428px;
-    height: 300px;
-    flex-shrink: 0;
-    background: rgba(254, 143, 74, 0.66);
-}
 .container{
-background-image: url(../demarrage/assets/accueil.png);
-width: 410px;
-height: 700px;
-flex-shrink: 0;
-border-radius: 70px;
-margin-top: 60px;
-margin-right: 60%;
+    width: 428px;
+    height: 926px;
+background-image: url(../demarrage/assets/badground.png);
 }
-img{
-   
-    flex-shrink: 0;
-    border-radius: 188px;
+.entete{
+display: flex;
+text-align: center;
+margin-top: 150px;
+display: flex;
+    width: 328px;
+    // padding: 0px 37px 0px 36px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+
+}
+.titre{
+    color: #22202A;
     text-align: center;
-    margin-top: 80px;
-    margin-left: 35%;
-    width: 100px;
-    height: 100px;
-    background-color: white;
-}
-P{
-    color: #000;
     font-family: Sunflower;
-    font-size: 25px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
-   text-align: center;
+    line-height: 20px;
+justify-content: center;
+}
+.bar{
+    width: 428px;
+    height: 70px;
+    flex-shrink: 0;
+    background-color: white;
+}
+form{
+justify-content: center;
+// align-items: center;
+ margin-top: 100px;
+margin-left: 20px;
+}
+.form-group{
+display: flex;
+flex-direction: column;
+margin-bottom: 10px;
+}
+label{
+    color: var(--second, #404F57);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+}
+input{
+    width: 361.25px;
+    height: 51.945px;
+    flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #D1E2EA;
+background: rgba(0, 0, 0, 0.06);  
+}
+::placeholder{
+    color: rgba(60, 60, 67, 0.60);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */ 
+}
+button{
+    display: flex;
+    width: 364.5px;
+    height: 61px;
+    padding: 6px 0px 6px 8px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+border-radius: 15px;
+background: var(--white, #FFF);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+a{
+margin-left: 55%;
 }
 .return{
-    width: 30px;
-    height: 30px;
-position: absolute;
-    top: 10px;
-    left: 10px;
-    
+width: 20px;
+height: 20px;
 }

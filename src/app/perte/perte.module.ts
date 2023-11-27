@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { PertePageRoutingModule } from './perte-routing.module';
 
 import { PertePage } from './perte.page';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PertePageRoutingModule
+    PertePageRoutingModule,
+    ReactiveFormsModule
   ],
   declarations: [PertePage]
 })

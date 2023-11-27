@@ -29,29 +29,17 @@ export class AlimentPage implements OnInit {
     },
   ];
 
-  public showAlert = false;
 
-  constructor(private alertController: AlertController) {}
+  constructor() {}
 
   ngOnInit() {}
 
-  async presentAlert(type: string) {
-    const alert = await this.alertController.create({
-      header: 'Type de Nourriture',
-      buttons: this.alertButtons,
-      inputs: this.alertInputs.map((input) => {
-        return {
-          ...input,
-          checked: input.label === type,
-        } as any; // Use 'as any' to bypass the type checking for 'type'
-      }),
-    });
+  buttonColor: string = 'valider-button';
 
-    await alert.present();
-    this.showAlert = true;
+  onValiderClick() {
+    // Handle the button click logic...
+    this.buttonColor = 'valider-button clicked';
   }
 
-  handleAlertDismiss() {
-    this.showAlert = false;
-  }
+
 }

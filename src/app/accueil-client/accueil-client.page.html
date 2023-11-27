@@ -1,15 +1,27 @@
 <div class="container">
     <div class="bar">
     <div class="logo">
-      <img src="../assets/logo.png">
+      <img src="../assets/logo.png" class="shop" >
     </div>
     <div class="tx">
-      <p>IKAWAIRAI</p>
+      <img src="../assets/shop.png" style="width: 30px; height: 30px; margin-top: -100px;">
     </div>
     </div>
-<div>
-<img src="../assets/deco.png" alt="" srcset="">
-</div>
+    
+    <ion-content>
+      <ion-slides [options]="slideOpts">
+        <ion-slide>
+          <img src="../assets/deco.png" alt="Décoration" />
+        </ion-slide>
+        <ion-slide>
+          <img src="../assets/fleur.png" alt="Fleur" />
+        </ion-slide>
+        <ion-slide>
+          <img src="../assets/fruit.png" alt="Fruit" />
+        </ion-slide>
+      </ion-slides>
+    </ion-content>
+    
 <div class="contenu">
 <div class="card">
 <div class="image">
@@ -18,7 +30,7 @@
 <div style="margin-left: 40px;">
 <P>Race:  Bélier</P>
 <P>Prix:  150 000</P>
-<button>Contact</button>
+<button routerLink="/contact">Commander</button>
 </div>
 </div>
 
@@ -29,7 +41,7 @@
     <div style="margin-left: 40px;">
     <P>Race:  Bélier</P>
     <P>Prix:  150 000</P>
-    <button>Contact</button>
+    <button routerLink="/contact">Commander</button>
     </div>
     </div>
     
@@ -40,8 +52,41 @@
         <div style="margin-left: 40px;">
         <P>Race:  Bélier</P>
         <P>Prix:  150 000</P>
-        <button>Contact</button>
+        <button routerLink="/contact">Commander</button>
         </div>
         </div>
+
+        <div class="card">
+          <div class="image">
+          <img src="../assets/photo.png" alt="">
+          </div>
+          <div style="margin-left: 40px;">
+          <P>Race:  Bélier</P>
+          <P>Prix:  150 000</P>
+          <button routerLink="/contact">Commander</button>
+          </div>
+          </div>
+
+          <div class="card">
+            <div class="image">
+            <img src="../assets/photo.png" alt="">
+            </div>
+            <div style="margin-left: 40px;">
+            <P>Race:  Bélier</P>
+            <P>Prix:  150 000</P>
+            <button routerLink="/contact">Commander</button>
+            </div>
+            </div>
+
+            <div class="card">
+              <div class="image">
+              <img src="../assets/photo.png" alt="">
+              </div>
+              <div style="margin-left: 40px;">
+              <P>Race:  Bélier</P>
+              <P>Prix:  150 000</P>
+              <button routerLink="/contact">Commander</button>
+              </div>
+              </div>
 </div>
 </div>

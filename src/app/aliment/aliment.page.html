@@ -1,9 +1,9 @@
 <div class="container">
   <div class="bar">
     <ion-icon name="arrow-back-outline" class="return" routerLink="/accueil-employer"></ion-icon>
-    <p class="titre">Nourriture</p>
+    <p class="titre">Commande</p>
   </div>
-  <h1>Poulet</h1>
+  <!-- <h1>Poulet</h1>
   <div class="category">
     <div class="card" (click)="presentAlert('Chair')">
       <h3>Chair</h3>
@@ -17,14 +17,37 @@
     <div class="card" (click)="presentAlert('AutreType')">
       <h3>Autre Type</h3>
     </div>
-  </div>
+  </div> -->
 
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="race">Race</ion-card-title>
+      <ion-card-subtitle>Categorie</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <div class="info-item">
+        <span class="label">Nom:</span>
+        <span class="value">Awa</span>
+      </div>
+      <div class="info-item">
+        <span class="label">Adresse:</span>
+        <span class="value">Kalaban Coura ACI</span>
+      </div>
+      
+      <div class="info-item">
+        <span class="label">Numéro:</span>
+        <span class="value">0000</span>
+      </div>
+      
+      <div class="info-item">
+        <span class="label">Quantité:</span>
+        <span class="value">20</span>
+      </div>
+    </ion-card-content>
+  
+    <ion-button fill="clear" (click)="onValiderClick()" [color]="buttonColor">Valider</ion-button>
+  </ion-card>
+  
 </div>
 
-<ion-alert
-  *ngIf="showAlert"
-  header="Type de Nourriture"
-  [buttons]="alertButtons"
-  [inputs]="alertInputs"
-  (ionAlertDidDismiss)="handleAlertDismiss()">
-</ion-alert>
