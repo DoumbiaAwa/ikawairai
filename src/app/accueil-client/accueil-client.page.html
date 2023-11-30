@@ -4,89 +4,37 @@
       <img src="../assets/logo.png" class="shop" >
     </div>
     <div class="tx">
-      <img src="../assets/shop.png" style="width: 30px; height: 30px; margin-top: -100px;">
+      <img src="../assets/shop.png" style="width: 30px; height: 30px; margin-top: -100px;" routerLink="/commande">
     </div>
-    </div>
-    
-    <ion-content>
-      <ion-slides [options]="slideOpts">
-        <ion-slide>
-          <img src="../assets/deco.png" alt="Décoration" />
-        </ion-slide>
-        <ion-slide>
-          <img src="../assets/fleur.png" alt="Fleur" />
-        </ion-slide>
-        <ion-slide>
-          <img src="../assets/fruit.png" alt="Fruit" />
-        </ion-slide>
-      </ion-slides>
-    </ion-content>
-    
+    </div>     
+    <ion-searchbar search-icon="search-circle" placeholder="Rechercher"></ion-searchbar>
+
+    <div id="image-container">
+      <div id="image-slider">
+          <img class="imge" src="../assets/deco.png" alt="Décoration 1">
+          <img class="imge" src="../assets/deco1.png" alt="Décoration 2">
+          <!-- <img class="imge" src="../assets/deco2.png" alt="Décoration 2"> -->
+          <!-- Ajoutez autant d'images que nécessaire -->
+      </div>
+  </div>
 <div class="contenu">
-<div class="card">
-<div class="image">
-<img src="../assets/photo.png" alt="">
+<div class="card"  *ngFor="let vente of ventes" >
+  <div style="margin-top: 30px;">  
+<div class="image" >
+<img src="../assets/cat.png" alt="">
 </div>
-<div style="margin-left: 40px;">
-<P>Race:  Bélier</P>
-<P>Prix:  150 000</P>
+<div style="text-align: center;">
+<P> <strong>Race:</strong> <span>{{vente.race}}</span></P>
+<P> <strong>categorie: </strong> <span>{{vente.categorie}}</span></P>
+<P> <strong>Prix: </strong> <span>{{vente.prix}}</span></P>
+</div>
 <button routerLink="/contact">Commander</button>
 </div>
 </div>
 
-<div class="card">
-    <div class="image">
-    <img src="../assets/photo.png" alt="">
-    </div>
-    <div style="margin-left: 40px;">
-    <P>Race:  Bélier</P>
-    <P>Prix:  150 000</P>
-    <button routerLink="/contact">Commander</button>
-    </div>
-    </div>
+
     
-    <div class="card">
-        <div class="image">
-        <img src="../assets/photo.png" alt="">
-        </div>
-        <div style="margin-left: 40px;">
-        <P>Race:  Bélier</P>
-        <P>Prix:  150 000</P>
-        <button routerLink="/contact">Commander</button>
-        </div>
-        </div>
 
-        <div class="card">
-          <div class="image">
-          <img src="../assets/photo.png" alt="">
-          </div>
-          <div style="margin-left: 40px;">
-          <P>Race:  Bélier</P>
-          <P>Prix:  150 000</P>
-          <button routerLink="/contact">Commander</button>
-          </div>
-          </div>
+ </div>
 
-          <div class="card">
-            <div class="image">
-            <img src="../assets/photo.png" alt="">
-            </div>
-            <div style="margin-left: 40px;">
-            <P>Race:  Bélier</P>
-            <P>Prix:  150 000</P>
-            <button routerLink="/contact">Commander</button>
-            </div>
-            </div>
-
-            <div class="card">
-              <div class="image">
-              <img src="../assets/photo.png" alt="">
-              </div>
-              <div style="margin-left: 40px;">
-              <P>Race:  Bélier</P>
-              <P>Prix:  150 000</P>
-              <button routerLink="/contact">Commander</button>
-              </div>
-              </div>
-</div>
 </div>
